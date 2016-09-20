@@ -57,10 +57,25 @@ public class Ex02_2_loops_arrays_switch {
 
         // Java 8 IntStream (or we can use Guava)
         // simple example without direct iteration in IntStream and lambdas
-        for (int i: IntStream.rangeClosed(1, 9).toArray()) {
+        for (int i : IntStream.rangeClosed(1, 9).toArray()) {
             iFactorial *= i;
         }
 
         System.out.println("iFactorial 10: " + iFactorial);
+
+        // switch - works for ints and chars (considering primitive types)
+        int iVal = 10;
+
+        switch (iVal % 2) {
+            case 0:
+                System.out.println(iVal + " even");
+                break;
+            case 1:
+                System.out.println(iVal + " odd");
+                break;
+            default:
+                System.out.println("error");
+                break;
+        }
     }
 }
