@@ -17,5 +17,8 @@ public class CalcEngine_03 {
             equations[i].execute();
             System.out.println("result " + (i + 1) + " = " + equations[i].getResult());
         }
+
+        MathEquation testEquation = new MathEquation();
+        System.out.println("test equation: " + testEquation.getResult());
     }
 }

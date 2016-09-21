@@ -1,10 +1,10 @@
 package com.gulci.java;
 
 public class MathEquation {
-    private double leftVal;
-    private double rightVal;
-    private char opCode;
-    private double result;
+    private double leftVal = 0.0d;
+    private double rightVal = 0.0d;
+    private char opCode = 'a';
+    private double result = 0.0d;
 
     public double getLeftVal() {
         return leftVal;
@@ -34,11 +34,15 @@ public class MathEquation {
         return result;
     }
 
+    public MathEquation() {
+
+    }
+
     public MathEquation(double leftVal, double rightVal, char opCode) {
         this.leftVal = leftVal;
         this.rightVal = rightVal;
         this.opCode = opCode;
-        result = 0.0d;
+        // result is always initialized in field initialization
     }
 
     public void execute() {
