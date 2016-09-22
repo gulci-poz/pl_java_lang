@@ -58,6 +58,7 @@ public class Earth {
     }
 
     public Earth(int countries, long population) {
+        // other constructor call must be in the first line
         this(countries);
         this.population = population;
     }

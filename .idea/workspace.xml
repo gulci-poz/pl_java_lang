@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ee15325-beab-4622-b4bd-41a39d868dfc" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/gulci/java/Earth.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/gulci/java/Ex05_params.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/gulci/java/FlightAdv.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/gulci/java/Passenger.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/gulci/java/Ex_04_init.java" afterPath="$PROJECT_DIR$/src/com/gulci/java/Ex04_init.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gulci/java/CalcEngine_03.java" afterPath="$PROJECT_DIR$/src/com/gulci/java/CalcEngine_03.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gulci/java/Ex_04_init.java" afterPath="$PROJECT_DIR$/src/com/gulci/java/Ex_04_init.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gulci/java/Earth.java" afterPath="$PROJECT_DIR$/src/com/gulci/java/Earth.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gulci/java/Ex03_classes.java" afterPath="$PROJECT_DIR$/src/com/gulci/java/Ex03_classes.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/gulci/java/MathEquation.java" afterPath="$PROJECT_DIR$/src/com/gulci/java/MathEquation.java" />
     </list>
     <ignored path="pl_java_lang.iws" />
@@ -27,7 +31,7 @@
     <favorites_list name="pl_java_lang" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -60,11 +64,14 @@
         <option value="$PROJECT_DIR$/src/com/gulci/java/CalcEngine.java" />
         <option value="$PROJECT_DIR$/src/com/gulci/java/CalcEngine_01.java" />
         <option value="$PROJECT_DIR$/src/com/gulci/java/CalcEngine_02.java" />
+        <option value="$PROJECT_DIR$/src/com/gulci/java/Ex_04_init.java" />
+        <option value="$PROJECT_DIR$/src/com/gulci/java/Passenger.java" />
+        <option value="$PROJECT_DIR$/src/com/gulci/java/Earth.java" />
         <option value="$PROJECT_DIR$/src/com/gulci/java/Ex03_classes.java" />
         <option value="$PROJECT_DIR$/src/com/gulci/java/MathEquation.java" />
+        <option value="$PROJECT_DIR$/src/com/gulci/java/Ex05_params.java" />
         <option value="$PROJECT_DIR$/src/com/gulci/java/CalcEngine_03.java" />
-        <option value="$PROJECT_DIR$/src/com/gulci/java/Earth.java" />
-        <option value="$PROJECT_DIR$/src/com/gulci/java/Ex_04_init.java" />
+        <option value="$PROJECT_DIR$/src/com/gulci/java/FlightAdv.java" />
       </list>
     </option>
   </component>
@@ -124,8 +131,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -164,7 +171,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,27 +182,7 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager" selected="Application.Ex_04_init">
-    <configuration default="false" name="CalcEngine_01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.gulci.java.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.gulci.java.CalcEngine_01" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="pl_java_lang" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.Ex05_params">
     <configuration default="false" name="Ex03_classes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -256,14 +243,34 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="Ex_04_init" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="Ex04_init" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="com.gulci.java.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.gulci.java.Ex_04_init" />
+      <option name="MAIN_CLASS_NAME" value="com.gulci.java.Ex04_init" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="pl_java_lang" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Ex05_params" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.gulci.java.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.gulci.java.Ex05_params" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -736,19 +743,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.CalcEngine_01" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Ex03_classes" />
-      <item index="2" class="java.lang.String" itemvalue="Application.CalcEngine_02" />
-      <item index="3" class="java.lang.String" itemvalue="Application.CalcEngine_03" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Ex_04_init" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Ex03_classes" />
+      <item index="1" class="java.lang.String" itemvalue="Application.CalcEngine_02" />
+      <item index="2" class="java.lang.String" itemvalue="Application.CalcEngine_03" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Ex04_init" />
+      <item index="4" class="java.lang.String" itemvalue="Application.Ex05_params" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.Ex_04_init" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Ex05_params" />
         <item index="1" class="java.lang.String" itemvalue="Application.CalcEngine_03" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Ex03_classes" />
-        <item index="3" class="java.lang.String" itemvalue="Application.CalcEngine_02" />
-        <item index="4" class="java.lang.String" itemvalue="Application.CalcEngine_01" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Ex04_init" />
+        <item index="3" class="java.lang.String" itemvalue="Application.Ex03_classes" />
+        <item index="4" class="java.lang.String" itemvalue="Application.CalcEngine_02" />
       </list>
     </recent_temporary>
   </component>
@@ -774,11 +781,12 @@
       <workItem from="1474402777631" duration="2200000" />
       <workItem from="1474434836916" duration="10621000" />
       <workItem from="1474456727438" duration="4583000" />
+      <workItem from="1474521401572" duration="15006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29796000" />
+    <option name="totallyTimeSpent" value="44802000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -793,10 +801,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25792813" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2484375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2484375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -831,7 +839,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Ex_04_init.java">
+    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Ex04_init.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -869,26 +877,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Ex01_variables.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Ex02_1_conditions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-198">
           <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/CalcEngine_02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -901,10 +893,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Ex03_classes.java">
+    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Passenger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+        <state relative-caret-position="396">
+          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="e#127#128#0" expanded="true" />
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#191#192#0" expanded="true" />
+            <element signature="e#223#224#0" expanded="true" />
+            <element signature="e#258#259#0" expanded="true" />
+            <element signature="e#292#293#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#389#390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Flight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/CalcEngine_02.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Earth.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="60" column="59" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
           <folding />
         </state>
       </provider>
@@ -917,57 +942,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/CalcEngine_03.java">
+    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Ex03_classes.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="180">
+          <caret line="13" column="45" selection-start-line="13" selection-start-column="45" selection-end-line="13" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Ex01_variables.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-288">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Ex04_init.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="17" column="85" selection-start-line="17" selection-start-column="85" selection-end-line="17" selection-end-column="85" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/gulci/java/MathEquation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="44" column="63" selection-start-line="44" selection-start-column="63" selection-end-line="44" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Flight.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Ex_04_init.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="15" column="102" selection-start-line="15" selection-start-column="102" selection-end-line="15" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Earth.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="45" column="54" selection-start-line="45" selection-start-column="54" selection-end-line="45" selection-end-column="54" />
+        <state relative-caret-position="611">
+          <caret line="90" column="30" selection-start-line="90" selection-start-column="30" selection-end-line="90" selection-end-column="30" />
           <folding>
-            <element signature="e#275#276#0" expanded="true" />
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#506#507#0" expanded="true" />
-            <element signature="e#554#555#0" expanded="true" />
-            <element signature="e#743#744#0" expanded="true" />
-            <element signature="e#775#776#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#899#900#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#982#983#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1585#1586#0" expanded="true" />
-            <element signature="e#1630#1631#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/CalcEngine_03.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="39" column="90" selection-start-line="39" selection-start-column="90" selection-end-line="39" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/Ex05_params.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="783">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/gulci/java/FlightAdv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="155" column="90" selection-start-line="155" selection-start-column="90" selection-end-line="155" selection-end-column="90" />
+          <folding>
+            <element signature="e#4886#4887#0" expanded="true" />
+            <element signature="e#4936#4937#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -11,6 +11,7 @@ public class Ex03_classes {
         // object can pass reference to itself as a parameter using this
         // null - reference literal, refers to an uncreated object, can be assigned to any reference variable
         // accessor/mutator pattern - to control field access - getter/setter
+        // constructor cannot return anything
 
         // in declaration we allocate memory to store reference to the object
         Flight nycToSf;

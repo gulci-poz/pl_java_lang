@@ -38,6 +38,10 @@ public class MathEquation {
 
     }
 
+    public MathEquation(char opCode) {
+        this.opCode = opCode;
+    }
+
     public MathEquation(double leftVal, double rightVal, char opCode) {
         this.leftVal = leftVal;
         this.rightVal = rightVal;
@@ -69,5 +73,21 @@ public class MathEquation {
                 System.out.println("unknown operator error");
                 break;
         }
+    }
+
+    public void execute(double leftVal, double rightVal) {
+        this.leftVal = leftVal;
+        this.rightVal = rightVal;
+
+        execute();
+    }
+
+    public void execute(int leftVal, int rightVal) {
+        this.leftVal = leftVal;
+        this.rightVal = rightVal;
+
+        execute();
+
+        result = (int) result;
     }
 }

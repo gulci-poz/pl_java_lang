@@ -20,5 +20,27 @@ public class CalcEngine_03 {
 
         MathEquation testEquation = new MathEquation();
         System.out.println("test equation: " + testEquation.getResult());
+
+        // testing overloaded execute()
+
+        // we can use automatic type conversion for widening,
+        // for example, we can pass short instead of int,
+        // or int instead of double
+
+        MathEquation overloadEq1 = new MathEquation('d');
+        overloadEq1.execute(32.0d, 3.0d);
+        System.out.println("overloadEq1: " + overloadEq1.getResult());
+
+        MathEquation overloadEq2 = new MathEquation('d');
+        overloadEq2.execute(32, 3);
+        System.out.println("overloadEq2: " + overloadEq2.getResult());
+
+        // (double, double) is chosen because of the match double-double
+        // and possible widening int -> double
+        // for (int, int) it would be necessary to narrow the double, java doesn't do that
+
+        MathEquation overloadEq3 = new MathEquation('d');
+        overloadEq3.execute((double) 32, 3);
+        System.out.println("overloadEq3: " + overloadEq3.getResult());
     }
 }

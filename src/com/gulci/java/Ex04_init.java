@@ -1,6 +1,6 @@
 package com.gulci.java;
 
-public class Ex_04_init {
+public class Ex04_init {
     public static void main(String[] args) {
         // field basic (zero) state - based on field type
 
@@ -14,6 +14,8 @@ public class Ex_04_init {
         // - initialization blocks - code shared across constructors; code block in class
         //      executed at the beginning of a constructor
         //      we may have multiple initialization blocks - they are executed in order - from the top
+
+        // construction order: field initializers, initialization block, constructors
 
         Earth newEarth = new Earth();
 
