@@ -20,6 +20,11 @@ public class Passenger {
         this.checkedBags = checkedBags;
     }
 
+    public Passenger() {
+        bags = 0;
+        checkedBags = 0;
+    }
+
     public Passenger(int bags) {
         this.bags = bags;
         checkedBags = 0;

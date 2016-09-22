@@ -47,7 +47,7 @@ public class Flight {
     }
 
     public boolean hasRoom(Flight f2) {
-        return passengers + f2.passengers < seats;
+        return passengers + f2.passengers <= seats;
     }
 
     public Flight createNewWithBoth(Flight f2, String newId) {

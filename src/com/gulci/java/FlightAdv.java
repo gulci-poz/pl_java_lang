@@ -168,7 +168,7 @@ public class FlightAdv {
     }
 
     public boolean hasRoom(FlightAdv f2) {
-        return passengers + f2.passengers < seats;
+        return passengers + f2.passengers <= seats;
     }
 
     private boolean hasSeating() {
