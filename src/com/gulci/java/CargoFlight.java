@@ -9,11 +9,14 @@ public class CargoFlight extends FlightAdv {
     // we have to use getters/setters (not direct access) in base class, to fetch private fields from derived class
     private int seats = 12;
 
+    // private fields and methods are not inherited
     // by default all methods are overrideable and all classes can be extended
     // we can change it by using final (with class or method)
     // final class means that all methods are final
 
-    // we can require inheritance with abstract
+    // we can require inheritance or override with abstract
+    // class may be abstract
+    // if we have an abstract method, the class must be marked as abstract
 
     // we can use a method getSeats() with return value, no field and no getter/setter
     // it's only usable when we have a fixed value
@@ -38,7 +41,7 @@ public class CargoFlight extends FlightAdv {
         this.usedCargoSpace = usedCargoSpace;
     }
 
-    // @Override checks the signature
+    // @Override checks the signature, information for the compiler
     @Override
     public int getSeats() {
         return seats;
@@ -58,6 +61,7 @@ public class CargoFlight extends FlightAdv {
         super(id);
     }
 
+    // final may be put before access modifier
     public final void addOnePackage(float width, float height, float depth) {
         float size = height * width * depth;
 
