@@ -6,14 +6,14 @@ public class Ex04_init {
 
         // mechanisms for establishing initial state
         // - field initializers - assignment in declaration
+        // - initialization blocks - code shared across constructors; code block in class
+        //      executed at the beginning of a constructor
+        //      we may have multiple initialization blocks - they are executed in order - from the top
         // - constructors - signature: number of parameters of a method (constructor)
         //      we can override initialized fields
         //      we can chain constructors to avoid logic duplication (using this, must be in first line)
         //      we can call basic constructor using this()
         //      constructor may be private, to hide the initialization logic that's not based on user input
-        // - initialization blocks - code shared across constructors; code block in class
-        //      executed at the beginning of a constructor
-        //      we may have multiple initialization blocks - they are executed in order - from the top
 
         // construction order: field initializers, initialization block, constructors
 

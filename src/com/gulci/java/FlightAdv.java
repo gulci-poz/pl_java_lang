@@ -1,12 +1,16 @@
 package com.gulci.java;
 
 public class FlightAdv {
+    // default for boolean is false
     private int passengers;
     private int seats;
     private int totalCheckedBags;
     private int maxCarryOns;
     private int totalCarryOns;
     private String id;
+    public int control;
+    private int flightNumber;
+    private char flightClass;
 
     public int getPassengers() {
         return passengers;
@@ -56,13 +60,56 @@ public class FlightAdv {
         this.totalCarryOns = totalCarryOns;
     }
 
+    public int getFlightNumber() {
+        return flightNumber;
+    }
+
+    public void setFlightNumber(int flightNumber) {
+        this.flightNumber = flightNumber;
+    }
+
+    public char getFlightClass() {
+        return flightClass;
+    }
+
+    public void setFlightClass(char flightClass) {
+        this.flightClass = flightClass;
+    }
+
+//    public FlightAdv() {
+//
+//    }
+
     public FlightAdv(String id) {
         seats = 150;
         passengers = 0;
         totalCheckedBags = 0;
         maxCarryOns = seats * 2;
         totalCarryOns = 0;
+        control = 32;
         this.id = id;
+    }
+
+    // we can define what object equality means for us
+    @Override
+    public boolean equals(Object o) {
+        // we may have the same object, further comparisons are not necessary
+        // if it's not the case, we compare specific fields
+        if (super.equals(o)) {
+            return true;
+        }
+
+        // we can only compare FlightAdv objects
+        if (!(o instanceof FlightAdv)) {
+            return false;
+        }
+
+        // we need access to flightNumber and flightClass, we have to cast Object to FlightAdv
+        FlightAdv other = (FlightAdv) o;
+        return
+                getFlightNumber() == other.getFlightNumber()
+                        && getFlightClass() == other.getFlightClass();
+
     }
 
     public boolean addOnePassenger() {
@@ -168,25 +215,29 @@ public class FlightAdv {
     }
 
     public boolean hasRoom(FlightAdv f2) {
-        return passengers + f2.passengers <= seats;
+        return getPassengers() + f2.getPassengers() <= getSeats();
     }
 
+    // we have to use getters/setters to fetch values of new private fields for derived class
+    // private fields are not inherited, so using direct access we'll be using base class private fields
+    // we have to use getters/setters for accessing all private fields if we plan to define them one more time in derived class
+
     private boolean hasSeating() {
-        return passengers < seats;
+        return getPassengers() < getSeats();
     }
 
     private boolean hasSeating(int count) {
-        return passengers + count <= seats;
+        return getPassengers() + count <= getSeats();
     }
 
     private boolean hasCarryOnSpace(int carryOns) {
-        return totalCarryOns + carryOns <= maxCarryOns;
+        return getTotalCarryOns() + carryOns <= getMaxCarryOns();
     }
 
     public FlightAdv createNewWithBoth(FlightAdv f2, String newId) {
         FlightAdv newFlight = new FlightAdv(newId);
-        newFlight.seats = seats;
-        newFlight.passengers = passengers + f2.passengers;
+        newFlight.seats = getSeats();
+        newFlight.passengers = getPassengers() + f2.getPassengers();
         System.out.println("New flight " + newFlight.id + " created.");
         return newFlight;
     }
