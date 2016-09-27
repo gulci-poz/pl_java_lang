@@ -52,11 +52,18 @@ public class CargoFlight extends FlightAdv {
         this.seats = seats;
     }
 
-    // we don't use @Override with constructors
-    // we use super with id parameter, otherwise we will run the default one (we initialize fields in other constructor)
-    // or, when the default constructor is not defined in the base class, we'll have an error
-    // similar to "this", super() treats the object as if it is an instance of its base class
-    // we can use fields and methods that are overriden in derived class
+    // constructors are not inherited
+    // a base class constructor must always be called
+    // by default, no argument constructor is called, but we may call the specific one
+    // if no argument constructor is not defined in a base class and we try super(), we we'll have an error
+    // we have to have a constructor with parameter, where we call super(id),
+    // because we have to call it explicitly, it won't we called implicitly as the no argument constructor
+
+    // here we have to call super(id) because we initialize fields in this constructor
+    // similar to "this", "super" treats the object as if it's an instance of a base class
+    // with super we can use fields and methods that are overriden in derived class
+    // we can use base class constructors with super() - must be in the first line of a new constructor
+
     public CargoFlight(String id) {
         super(id);
     }
