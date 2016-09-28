@@ -13,6 +13,7 @@ public class Ex_07_strings {
 
         System.out.println("length: " + greeting.length());
         System.out.println("valueOf: " + String.valueOf(32));
+        // for String representation of a class we use overriden toString() method
         greeting = greeting.concat("!");
         System.out.println("concat: " + greeting);
         greeting = greeting.replace('!', '?');
@@ -79,5 +80,116 @@ public class Ex_07_strings {
 
         System.out.println("== after intern: " + (s3 == s4));
         System.out.println("equals after intern: " + s3.equals(s4));
+
+        // StringBuilder provides mutable string buffer
+        // for best performance pre-size buffer
+        // will grow automatically if needed (overhead)
+        StringBuilder sb = new StringBuilder(40);
+        System.out.println("sb capacity: " + sb.capacity());
+        sb.append("StringBuilder append");
+        System.out.println("sb length: " + sb.length());
+        sb.insert(13, " -=32 inserted=- ");
+        sb.insert(30, 32);
+        // we can use sb or sb.toString()
+        System.out.println(sb.toString() + " " + sb.length());
+        sb.append(" extending beyond the length");
+        System.out.println(sb.toString() + " " + sb.length());
+
+        // classes vs. primitives
+        // class: iteration through Object class, fields and methods specific to the type, overhead
+        // primitive: cannot be treated as Object, cannot expose fields or methods, lightweight
+
+        // primitives wrapper classes (inherit from the Object)
+        // capabilities and overhead + primitive values
+        // each of primitive types has a corresponding wrapper class
+        // Boolean, Character, Number (abstract): Byte, Short, Integer, Long, Float, Double
+        // all wrapper class instances are immutable
+        // common conversions are handled automatically
+
+        // a is a reference, 100 is a primitive, a points to the object that contains 100 as its value
+        Integer a = 100;
+
+        // Java extracts value from the object that a points to
+        int b = a;
+
+        // Java creates a new object and puts the value of b into it, c refers to that object
+        Integer c = b;
+
+        System.out.println(a.equals(c));
+
+        Character cha = 'G';
+        char chb = cha;
+        Character chc = chb;
+
+        System.out.println(cha.equals(chc));
+
+        // in both cases we use the same literal/object of a wrapper class
+        // explanation below
+
+        Integer i1000A = 10 * 10 * 10;
+        Integer i1000B = 100 * 10;
+
+        System.out.println("different objects using ==: " + (i1000A == i1000B));
+        System.out.println("different objects using equals: " + i1000A.equals(i1000B));
+
+        Integer i8A = 2 * 2 * 2;
+        Integer i8B = 4 * 2;
+        System.out.println("different objects using ==: " + (i8A == i8B));
+        // boxing conversions that always return the same wrapper class instance
+        // Integer, Short, Byte: -128 to 127
+        // Character: codepoints u0000 to u00ff
+        // Boolean: true, false
+
+        // primitive -> wrapper - boxing, static xxxWrapper.valueOf()
+        // exactly the same as assigning the value
+        // compiler injects the value to Integer.valueOf()
+        // from Java 5 inference is the default behaviour
+        Integer conv1 = Integer.valueOf(32);
+
+        // wrapper to primitive - unboxing, xxxValue()
+        int val1 = conv1.intValue();
+
+        // String -> primitive, parsing the string through specific class
+        String age = "32";
+        int ageInt = Integer.parseInt(age);
+
+        // String -> wrapper
+        Integer ageInteger = Integer.valueOf(age);
+
+        // testing if we assigned a value to the variable
+        // instead of checking nullInteger > 0 (even if we didn't assign a value, it may be <= 0)
+        Integer nullInteger = null;
+        if (nullInteger == null) {
+            System.out.println("null");
+        } else {
+            System.out.println("not null");
+        }
+
+        // wrapper class members
+        // Byte, Short, Integer, Long: MIN_VALUE, MAX_VALUE, bitCount, toBinaryString
+        // Float, Double: MIN_VALUE, MAX_VALUE, infinite, isNaN
+        // Character: MIN_VALUE, MAX_VALUE, isDigit, isLetter
+        // Boolean: TRUE, FALSE
+        System.out.println(cha + " isDigit: " + Character.isDigit(cha));
+        System.out.println(cha + " isLetter: " + Character.isLetter(cha));
+
+        // final fields
+        // a simple one - must be set during creatio of an object instance (field initializer, initialization block, constructor)
+        // static modifier - makes a final field a named constant
+        // tight to the class, cannot be set by any object instance; we use all caps in the name
+        // good for magic numbers
+        // we can also use static fields - they can be changed later, but they are bound to the class (not the instance)
+        // static methods are also bound to the class
+        // example from Flight class
+        //static final int MAX_FAA_SEATS = 550;
+
+        // enumeration types
+        // a finite list of valid values
+        // enum must not be local
+
+        CrewMember gulci = new CrewMember(CrewMember.FlightCrewJob.CoPilot);
+        System.out.println(gulci.getJob());
+        gulci.setJob(CrewMember.FlightCrewJob.Pilot);
+        System.out.println(gulci.getJob());
     }
 }

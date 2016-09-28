@@ -1,6 +1,8 @@
 package com.gulci.java;
 
 public class Flight {
+    static final int MAX_FAA_SEATS = 550;
+
     private int passengers;
     private int seats;
     private String id;

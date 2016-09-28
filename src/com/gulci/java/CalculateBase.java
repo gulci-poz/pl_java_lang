@@ -5,6 +5,8 @@ public abstract class CalculateBase {
     private double rightVal = 0.0d;
     private double result = 0.0d;
 
+    public abstract String operator();
+
     public double getLeftVal() {
         return leftVal;
     }

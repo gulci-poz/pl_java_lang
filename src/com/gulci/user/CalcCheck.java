@@ -8,4 +8,8 @@ public class CalcCheck extends CalculateBase {
         // if marked protected, we would
         //setResult(0.0d);
     }
+
+    public String operator() {
+        return "";
+    }
 }
