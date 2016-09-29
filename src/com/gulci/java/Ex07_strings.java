@@ -1,6 +1,6 @@
 package com.gulci.java;
 
-public class Ex_07_strings {
+public class Ex07_strings {
     public static void main(String[] args) {
         // sequence of unicode characters, stored using utf-16 encoding
         // String objects are immutable
