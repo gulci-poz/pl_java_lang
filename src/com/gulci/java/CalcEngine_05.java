@@ -11,9 +11,7 @@ public class CalcEngine_05 {
         for (int i = 0; i < leftVals.length; i++) {
             for (CalculateBase calculator : calculators) {
                 //System.out.println(ch.process(calculator, leftVals[i], rightVals[i]));
-                //System.out.println(ch.process(calculator, leftVals[i], rightVals[i], (i + 1)));
-                //System.out.println(ch.processExt(calculator, leftVals[i], rightVals[i]));
-                System.out.println(ch.processExt(calculator, leftVals[i], rightVals[i], (i + 1)));
+                System.out.println(ch.process(calculator, leftVals[i], rightVals[i], (i + 1)));
             }
 
             System.out.println();

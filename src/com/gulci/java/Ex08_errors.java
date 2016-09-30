@@ -92,7 +92,7 @@ public class Ex08_errors {
         // code in finally will be executed even if exception occurs, exception will call up the call stack
 
         // method overriding - throws clauses must be compatible
-        // we can exclude exceptions - when we don't throw exceptions that weren't specified in the base class
+        // we can exclude exceptions from the base class
         // we can have the same exception
         // we can have a derived exception, for example FileNotFoundException for initial IOException (important with polymorphism)
 
@@ -105,5 +105,14 @@ public class Ex08_errors {
         }
 
         System.out.println("passengers: " + fa.getPassengers());
+
+        System.out.println();
+
+        // many exceptions provide a constructor that accepts string message
+        // when we throw an exception caused by another exception, we have to include originating exception
+        // all exception classes support initCause method
+        // many exceptions provide a constructor that accepts the originating exception
+        // custom exceptions inherit from Exception class (if not RuntimeExcpetion, they'll be checked exceptions)
+        // we must provide at least two constructors: message + details and the same with the originating exception
     }
 }

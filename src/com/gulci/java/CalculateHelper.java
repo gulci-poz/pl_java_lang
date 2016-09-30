@@ -1,23 +1,27 @@
 package com.gulci.java;
 
 public class CalculateHelper {
-    public String process(CalculateBase calculator, double leftVal, double rightVal) {
+    public String process(CalculateBase calculator, double leftVal, double rightVal) throws InvalidCalculationElementException {
+        // we don't check equality of floats and doubles, but here we assume we have literals and Infinity
+        if (leftVal == rightVal && calculator instanceof Divider) {
+            throw new InvalidCalculationElementException("same number division", calculator.toString());
+        }
+
         calculate(calculator, leftVal, rightVal);
+        try {
+            if (calculator.getResult() == Double.POSITIVE_INFINITY || calculator.getResult() == Double.NEGATIVE_INFINITY) {
+                // we don't need throws for ArithmeticException (unckecked exception)
+                // but we need catch for ArithmeticException in every method up in the chain call
+                throw new ArithmeticException("ArithmeticException division by zero");
+            }
+        } catch (ArithmeticException e) {
+            throw new InvalidCalculationElementException("division by zero", calculator.toString(), e);
+        }
+
         return buildResult(calculator, leftVal, rightVal);
     }
 
     public String process(CalculateBase calculator, double leftVal, double rightVal, int order) {
-        calculate(calculator, leftVal, rightVal);
-        return buildResult(calculator, leftVal, rightVal, order);
-    }
-
-    public String processExt(CalculateBase calculator, double leftVal, double rightVal) {
-        calculate(calculator, leftVal, rightVal);
-        return buildResult(calculator, leftVal, rightVal);
-    }
-
-    // StringBuilder version
-    public String processExt(CalculateBase calculator, double leftVal, double rightVal, int order) {
         calculate(calculator, leftVal, rightVal);
         return buildResult(calculator, leftVal, rightVal, order);
     }
