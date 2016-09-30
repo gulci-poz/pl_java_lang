@@ -9,6 +9,7 @@ public class Adder extends CalculateBase {
         super(leftVal, rightVal);
     }
 
+    @Override
     public String operator() {
         return "+";
     }

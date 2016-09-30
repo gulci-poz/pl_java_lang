@@ -79,5 +79,13 @@ public class Ex10_interfaces {
         for (Person p : lax01) {
             System.out.println(p.getName());
         }
+
+        // declaring an interface
+        // methods - name, parameters and return type, implicitly public
+        // constants - typed named values, implicitly public, final, static
+        // extending interfaces - we can extend another interface
+        // implementing extended interface implies implementation of base
+
+        // interfaces provide more intuitive polymorphism
     }
 }

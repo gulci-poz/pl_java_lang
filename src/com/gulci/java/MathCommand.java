@@ -4,5 +4,6 @@ enum MathCommand {
     Addition,
     Subtraction,
     Multiplication,
-    Division
+    Division,
+    Power
 }
