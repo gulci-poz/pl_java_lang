@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="pl_java_lang:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/pl_java_lang_jar</output-path>
+    <root id="archive" name="pl_java_lang.jar">
+      <element id="module-output" name="pl_java_lang" />
+    </root>
+  </artifact>
+</component>

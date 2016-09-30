@@ -5,7 +5,7 @@ public class Ex03_classes {
         // object consumer - what it is doing, not how
         // Pascal case - object name
         // no access modifier - package private
-        // top level classes - cannot use private, only nested classes
+        // top level classes - cannot use private or protected, only nested classes
         // public classes have to be inside of a source file of the same name (package private - no)
         // arrays are objects
         // object can pass reference to itself as a parameter using this
