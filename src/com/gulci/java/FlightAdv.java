@@ -3,8 +3,9 @@ package com.gulci.java;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Iterator;
 
-public class FlightAdv {
+public class FlightAdv implements Comparable<FlightAdv>, Iterable<Person> {
     // default for boolean is false
     private int passengers;
     private int seats;
@@ -15,6 +16,10 @@ public class FlightAdv {
     public int control;
     private int flightNumber;
     private char flightClass;
+    // minutes past midnight
+    private int flightTime;
+    private CrewMember[] crew;
+    private Passenger[] roster;
 
     public int getPassengers() {
         return passengers;
@@ -80,6 +85,30 @@ public class FlightAdv {
         this.flightClass = flightClass;
     }
 
+    public int getFlightTime() {
+        return flightTime;
+    }
+
+    public void setFlightTime(int flightTime) {
+        this.flightTime = flightTime;
+    }
+
+    public CrewMember[] getCrew() {
+        return crew;
+    }
+
+    public void setCrew(CrewMember[] crew) {
+        this.crew = crew;
+    }
+
+    public Passenger[] getRoster() {
+        return roster;
+    }
+
+    public void setRoster(Passenger[] roster) {
+        this.roster = roster;
+    }
+
 //    public FlightAdv() {
 //
 //    }
@@ -114,6 +143,14 @@ public class FlightAdv {
                 getFlightNumber() == other.getFlightNumber()
                         && getFlightClass() == other.getFlightClass();
 
+    }
+
+    public int compareTo(FlightAdv fa) {
+        return flightTime - fa.flightTime;
+    }
+
+    public Iterator<Person> iterator() {
+        return new FlightIterator(crew, roster);
     }
 
     public boolean addOnePassenger() {

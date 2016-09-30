@@ -1,7 +1,7 @@
 package com.gulci.java;
 
-public class CrewMember {
-    public enum FlightCrewJob {
+public class CrewMember extends Person {
+    enum FlightCrewJob {
         Pilot,
         CoPilot,
         FlightAttendant,

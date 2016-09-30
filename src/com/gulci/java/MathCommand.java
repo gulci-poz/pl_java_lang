@@ -1,6 +1,6 @@
 package com.gulci.java;
 
-public enum MathCommand {
+enum MathCommand {
     Addition,
     Subtraction,
     Multiplication,
