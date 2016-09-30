@@ -87,5 +87,17 @@ public class Ex10_interfaces {
         // implementing extended interface implies implementation of base
 
         // interfaces provide more intuitive polymorphism
+
+        System.out.println();
+
+        // version with inner class FlightIterator
+
+        FlightAdv2 bar01 = new FlightAdv2("bar01");
+        bar01.setCrew(crew);
+        bar01.setRoster(roster);
+
+        for (Person p : bar01) {
+            System.out.println(p.getName());
+        }
     }
 }

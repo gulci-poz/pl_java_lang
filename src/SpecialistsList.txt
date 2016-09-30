@@ -1,0 +1,10 @@
+Pilot,Patty
+Pilot,Paul
+CoPilot,Karl
+CoPilot,Karen
+FlightAttendant,Fred
+FlightAttendant,Phyllis
+FlightAttendant,Frank
+FlightAttendant,Fiona
+AirMarshal,Ann
+AirMarshal,Alan
