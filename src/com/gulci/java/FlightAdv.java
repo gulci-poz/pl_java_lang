@@ -6,6 +6,8 @@ import java.io.IOException;
 import java.util.Iterator;
 
 public class FlightAdv implements Comparable<FlightAdv>, Iterable<Person> {
+    static int allPassengers;
+
     // default for boolean is false
     private int passengers;
     private int seats;
@@ -20,6 +22,14 @@ public class FlightAdv implements Comparable<FlightAdv>, Iterable<Person> {
     private int flightTime;
     private CrewMember[] crew;
     private Passenger[] roster;
+
+    static int getAllPassengers() {
+        return allPassengers;
+    }
+
+    static void resetAllPassengers() {
+        allPassengers = 0;
+    }
 
     public int getPassengers() {
         return passengers;
@@ -156,6 +166,7 @@ public class FlightAdv implements Comparable<FlightAdv>, Iterable<Person> {
     public boolean addOnePassenger() {
         if (hasSeating()) {
             passengers += 1;
+            allPassengers += 1;
             return true;
         } else {
             // function return type is void, but we can enforce exit, control goes back to the caller
